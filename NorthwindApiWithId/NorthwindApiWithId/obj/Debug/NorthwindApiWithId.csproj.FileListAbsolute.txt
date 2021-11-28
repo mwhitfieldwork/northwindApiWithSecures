@@ -107,7 +107,6 @@ C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\bin\Mi
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\bin\System.Web.Http.Owin.xml
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.csproj.CoreCompileInputs.cache
-C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.csproj.CopyComplete
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.dll
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.pdb
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.csproj.AssemblyReference.cache

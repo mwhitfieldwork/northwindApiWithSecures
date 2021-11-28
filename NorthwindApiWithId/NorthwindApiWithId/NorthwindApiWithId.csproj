@@ -49,6 +49,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -208,6 +209,57 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Data\Category.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Customer.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\CustomerDemographic.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Employee.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\NWDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NWDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\NWDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\NWDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NWDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Order.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Order_Detail.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Product.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Region.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Shipper.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Supplier.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Territory.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\User.cs">
+      <DependentUpon>NWDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -249,6 +301,23 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <EntityDeploy Include="Data\NWDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NWDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Data\NWDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NWDB.edmx</DependentUpon>
+      <LastGenOutput>NWDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\NWDB.edmx.diagram">
+      <DependentUpon>NWDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="Data\NWDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NWDB.edmx</DependentUpon>
+      <LastGenOutput>NWDB.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -306,6 +375,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
