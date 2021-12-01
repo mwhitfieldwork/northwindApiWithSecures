@@ -39,7 +39,6 @@
     <Property Name="Country" Type="nvarchar" MaxLength="15" />
     <Property Name="Phone" Type="nvarchar" MaxLength="24" />
     <Property Name="Fax" Type="nvarchar" MaxLength="24" />
-    <Property Name="UserID" Type="nchar" MaxLength="10" />
   </EntityType>
   <EntityType Name="Employees">
     <Key>
@@ -163,9 +162,7 @@
     </Key>
     <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="UserName" Type="varchar" MaxLength="50" />
-    <Property Name="Password" Type="varchar" MaxLength="100" />
-    <Property Name="CustomerID" Type="int" />
-    <Property Name="Role" Type="int" />
+    <Property Name="Passowrd" Type="varchar" MaxLength="100" />
   </EntityType>
   <Association Name="FK_CustomerCustomerDemo">
     <End Role="CustomerDemographics" Type="Self.CustomerDemographics" Multiplicity="1" />
@@ -187,6 +184,18 @@
         <PropertyRef Name="CustomerID" />
       </Principal>
       <Dependent Role="CustomerCustomerDemo">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_Customers">
+    <End Role="Customers" Type="Self.Customers" Multiplicity="1" />
+    <End Role="Customers1" Type="Self.Customers" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="Customers1">
         <PropertyRef Name="CustomerID" />
       </Dependent>
     </ReferentialConstraint>
@@ -345,6 +354,10 @@
     <AssociationSet Name="FK_CustomerCustomerDemo_Customers" Association="Self.FK_CustomerCustomerDemo_Customers">
       <End Role="Customers" EntitySet="Customers" />
       <End Role="CustomerCustomerDemo" EntitySet="CustomerCustomerDemo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_Customers" Association="Self.FK_Customers_Customers">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Customers1" EntitySet="Customers" />
     </AssociationSet>
     <AssociationSet Name="FK_Employees_Employees" Association="Self.FK_Employees_Employees">
       <End Role="Employees" EntitySet="Employees" />
