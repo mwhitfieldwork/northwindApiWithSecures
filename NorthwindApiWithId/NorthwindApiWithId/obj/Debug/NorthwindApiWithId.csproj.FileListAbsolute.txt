@@ -109,4 +109,5 @@ C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\bin\Mi
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.csproj.CoreCompileInputs.cache
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.dll
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.pdb
-C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.csproj.AssemblyReference.cache
+C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.csprojAssemblyReference.cache
+C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.csproj.CopyComplete
