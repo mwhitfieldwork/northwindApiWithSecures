@@ -19,6 +19,9 @@ namespace NorthwindApiWithId
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+            
+            //Enable CORS
+            config.EnableCors();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

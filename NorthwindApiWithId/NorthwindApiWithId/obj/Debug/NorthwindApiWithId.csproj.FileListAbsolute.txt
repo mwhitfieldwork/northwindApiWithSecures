@@ -111,3 +111,6 @@ C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\De
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.pdb
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.csprojAssemblyReference.cache
 C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\obj\Debug\NorthwindApiWithId.csproj.CopyComplete
+C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\bin\System.Web.Cors.dll
+C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\bin\System.Web.Http.Cors.dll
+C:\Projects\northwindApiWithSecures\NorthwindApiWithId\NorthwindApiWithId\bin\System.Web.Http.Cors.xml
