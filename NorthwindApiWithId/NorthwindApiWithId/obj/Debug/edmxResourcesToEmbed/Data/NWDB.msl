@@ -142,15 +142,6 @@
         <ScalarProperty Name="TerritoryID" ColumnName="TerritoryID" />
       </EndProperty>
     </AssociationSetMapping>
-    <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="NorthwindModel.User">
-        <MappingFragment StoreEntitySet="User">
-          <ScalarProperty Name="Passowrd" ColumnName="Passowrd" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Customers">
       <EntityTypeMapping TypeName="NorthwindModel.Customer">
         <MappingFragment StoreEntitySet="Customers">
@@ -176,5 +167,14 @@
         <ScalarProperty Name="CustomerTypeID" ColumnName="CustomerTypeID" />
       </EndProperty>
     </AssociationSetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="NorthwindModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
